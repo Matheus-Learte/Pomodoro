@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+
+    #conteudo {
+        padding: 10px;
+    }
+
+    #menu-lateral {
+        padding: 20px;
+    }
+
+    #menu-lateral ul {
+        gap: 10px;
+    }
+
+    #pomodoro #timer {
+        font-size: 60px;
+    }
+
+    #pomodoro #menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #pomodoro .icone_pomo,
+    #pomodoro .button_pomo,
+    #pomodoro .button_start {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #pomodoro #menu {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #pomodor #fullscreen #icone_fullscreen {
+        padding: 0 40px;
+    }
+}

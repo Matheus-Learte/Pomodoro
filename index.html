@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro - CodeLab</title>
+    <link rel="shortcut icon" href="./src/imagens/logo_simplified_white.png" type="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+    <section>
+        <div id="background">
+            <video id="wallpaper" class="ativo" src="./src/imagens/Underwater.mp4" autoplay loop muted></video>
+        </div>
+
+        <div id="conteudo">
+            <div id="codelab">
+                <button class="img-button">
+                    <img src="./src/imagens/logo_codelab.png" alt="codelab logo" id="icone_codelab">
+                </button>
+            </div>
+
+            <div id="pomodoro">
+                <div id="tipos_de_timer">
+                    <button class="button_pomo selecionado" id="pomodoro-button">pomodoro</button>
+                    <button class="button_pomo" id="short-pause-button">short pause</button>
+                    <button class="button_pomo" id="long-pause-button">long pause</button>
+                </div>
+
+                <div id="timer">
+                    <h1 id="time-display">25:00</h1>
+                </div>
+
+                <div id="menu">
+                    <button class="button_start" id="start-button">start</button>
+                    <button class="img-button">
+                        <img src="./src/imagens/restart.svg" alt="icone restart" class="icone_pomo" id="reset-button" />
+                    </button>
+                    <button class="img-button">
+                        <img src="./src/imagens/configuration.svg" alt="icone configuração" class="icone_pomo" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="//configuracao selecionado">
+                <aside id="menu-configuracao">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <div id="fullscreen">
+                <button class="img-button">
+                    <img src="./src/imagens/full_screen.svg" alt="icone tela cheia" id="icone_fullscreen" />
+                </button>
+            </div>
+
+            <aside id="menu-lateral">
+                <ul>
+                    <li>
+                        <button class="img-button" onclick="abrirLinksInsta()">
+                            <img src="./src/imagens/Instagram.svg" alt="icone Instagram" class="icone_lateral" />
+                        </button>
+                    </li>
+                    <li>
+                        <button class="img-button" onclick="abrirLinksLinkedin()">
+                            <img src="./src/imagens/linkedin-in.svg" alt="icone Linkedin" class="icone_lateral" />
+                        </button>
+                    </li>
+                    <li>
+                        <button class="img-button" onclick="abrirLinksGithub()">
+                            <img src="./src/imagens/github.svg" alt="icone GitHub" class="icone_lateral" />
+                        </button>
+                    </li>
+                </ul>
+            </aside>
+
+        </div>
+    </section>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
